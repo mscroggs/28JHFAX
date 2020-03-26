@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from page import Page
-from helpers import url_handler
+from ceefax.page import Page
+from ceefax import config
+from ceefax.helpers import url_handler
 import datetime
-import config
 import metoffer
 import pytz
 

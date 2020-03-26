@@ -1,4 +1,5 @@
-from page import Page
+from ceefax.page import Page
+from ceefax import config
 from textwrap import fill
 
 class TubePage(Page):

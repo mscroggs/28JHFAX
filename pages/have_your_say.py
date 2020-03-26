@@ -1,5 +1,6 @@
-from page import Page
-from cupt.cupt import non_dark_colors
+from ceefax.page import Page
+from ceefax import config
+from ceefax.cupt.cupt import non_dark_colors
 from random import choice
 
 class TwitterPage(Page):

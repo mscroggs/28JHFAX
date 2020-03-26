@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from page import Page
-from helpers import url_handler
-from config import twitch_client_id
+from ceefax.page import Page
+from ceefax import config
+from ceefax.helpers import url_handler
+from ceefax.config import twitch_client_id
 import datetime
-import config
 import metoffer
 import tubestatus
 

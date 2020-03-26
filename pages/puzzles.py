@@ -1,8 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from page import Page
+from ceefax.page import Page
 from random import choice, randrange
+from ceefax.helpers import url_handler
+import config
+
 
 class CrosswordPage(Page):
     def __init__(self, num, title, solution, aclues, dclues):
@@ -219,10 +222,6 @@ class SudokuPage(Page):
         self.move_cursor(y=10,x=47)
         self.add_wrapped_text("Press + to reveal answer", fg="GREEN")
 
-
-from page import Page
-from helpers import url_handler
-import config
 
 def cleanstr(n):
     if type(n) is int:

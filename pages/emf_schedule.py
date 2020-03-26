@@ -1,7 +1,7 @@
-from page import Page
-import config
+from ceefax.page import Page
+from ceefax import config
 from datetime import datetime
-from helpers import url_handler
+from ceefax.helpers import url_handler
 
 def just_date(stuff):
     return stuff.split()[0]

@@ -1,6 +1,5 @@
-from page import Page
-from ceefax import Ceefax
-import config
+from ceefax.page import Page
+from ceefax import config
 
 class ObitPage(Page):
     def __init__(self, n, which_number, main=None):

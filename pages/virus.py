@@ -1,8 +1,6 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-from page import Page
-from helpers import url_handler
+from ceefax.page import Page
+from ceefax import config
+from ceefax.helpers import url_handler
 
 class VirusGraphPage(Page):
     def __init__(self, page_num, cname, shortname=None):

@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import config
-from page import Page
-from functions import replace
-from helpers import url_handler
-from helpers.time import datetime
+from ceefax.page import Page
+from ceefax import config
+from ceefax.functions import replace
+from ceefax.helpers import url_handler
+from ceefax.helpers.time import datetime
 
 class RadioPage(Page):
     def __init__(self, page_num, channel, feed, day):

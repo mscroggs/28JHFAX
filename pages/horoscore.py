@@ -1,4 +1,5 @@
-from page import Page
+from ceefax.page import Page
+from ceefax import config
 
 predictions = {
     "Aries":        "As Jupiter forms a regular polygon with some other planets, you will look back at past loves, past lives, past jobs, wondering where it all went wrong. Don't be tempted to rekindle old flames, it would be far more prudent for you to make a run for it. I'll be right behind you as soon as I get these damn handcuffs off.",

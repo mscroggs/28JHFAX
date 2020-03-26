@@ -1,8 +1,8 @@
-from page import Page
-from config import now
+from ceefax.page import Page
+from ceefax import config
+from ceefax.config import now
 from math import cos,sin,floor,pi
 from pytz import timezone
-import config
 
 
 class TimePage(Page):

@@ -1,6 +1,6 @@
-from page import Page
+from ceefax.page import Page
+from ceefax import config
 from ceefax import Ceefax
-import config
 
 class IndexPage(Page):
     def __init__(self, n):

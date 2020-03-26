@@ -1,4 +1,4 @@
-from page import Page
+from ceefax.page import Page
 
 class GamePage(Page):
     def __init__(self, number, text, options=[]):

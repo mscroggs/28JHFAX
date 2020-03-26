@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from page import Page
+from ceefax.page import Page
+from ceefax import config
 
 def listrange(*args):
     return list(range(*args))

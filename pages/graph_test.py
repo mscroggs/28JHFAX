@@ -1,4 +1,4 @@
-from page import Page
+from ceefax.page import Page
 from random import randint
 
 class GraphTestPage(Page):

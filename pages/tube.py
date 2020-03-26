@@ -1,7 +1,7 @@
-from __future__ import division
+from ceefax.page import Page
+from ceefax import config
+from ceefax.helpers import url_handler
 import json
-from page import Page
-from helpers import url_handler
 
 class TubePage(Page):
     def __init__(self, page_num, code, station):

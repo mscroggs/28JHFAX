@@ -1,6 +1,5 @@
-
-from page import Page
-import config
+from ceefax.page import Page
+from ceefax import config
 
 class MerryLadsPage(Page):
     def __init__(self, page_num):

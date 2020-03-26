@@ -1,6 +1,6 @@
-import config
-from page import Page
-from helpers.url_handler import load_json
+from ceefax.page import Page
+from ceefax import config
+from ceefax.helpers.url_handler import load_json
 
 class MathOffPage(Page):
     def __init__(self):

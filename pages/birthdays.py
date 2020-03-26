@@ -1,7 +1,7 @@
-from page import Page
+from ceefax.page import Page
+from ceefax import config
 from random import choice
-import config
-from helpers.file_handler import f_read_json
+from ceefax.helpers.file_handler import f_read_json
 
 class BdayPage(Page):
     def __init__(self, page_num):

@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-from page import Page
-import config
+from ceefax.page import Page
+from ceefax import config
 
 class CurrencyPage(Page):
     def __init__(self, page_num, c1, c2):

@@ -1,5 +1,6 @@
-from page import Page
-from functions import strip_tags_and_replace
+from ceefax.page import Page
+from ceefax import config
+from ceefax.functions import strip_tags_and_replace
 
 class WikiPage(Page):
     def __init__(self, page_num, url, title, dyk=False, new=False):

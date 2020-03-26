@@ -1,4 +1,5 @@
-from page import Page
+from ceefax.page import Page
+from ceefax import config
 from random import shuffle
 
 class JobPage(Page):

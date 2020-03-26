@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-from page import Page
-from helpers.time import datetime
-import config
+from ceefax.page import Page
+from ceefax import config
+from ceefax.helpers.time import datetime
 
 class CountdownPage(Page):
     def __init__(self, page_num,who,when,numb=None):

@@ -1,5 +1,5 @@
-from page import Page
-import config
+from ceefax.page import Page
+from ceefax import config
 
 class TestPage(Page):
     def __init__(self):

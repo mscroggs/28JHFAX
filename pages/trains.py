@@ -1,4 +1,4 @@
-from page import Page
+from ceefax.page import Page
 
 british_rail =("rrrrWWrrrrr\n"
                "rrrrrWWrrrr\n"

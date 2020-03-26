@@ -1,6 +1,7 @@
-from page import Page
-from functions import replace
-from helpers import url_handler
+from ceefax.page import Page
+from ceefax import config
+from ceefax.functions import replace
+from ceefax.helpers import url_handler
 
 class FilmPage(Page):
     def __init__(self, page_num):

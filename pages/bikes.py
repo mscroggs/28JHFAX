@@ -1,6 +1,6 @@
-from __future__ import division
-from page import Page
-from helpers import url_handler
+from ceefax.page import Page
+from ceefax import config
+from ceefax.helpers import url_handler
 
 class BikePage(Page):
     def __init__(self, page_num):

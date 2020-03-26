@@ -1,4 +1,4 @@
-from page import Page
+from ceefax.page import Page
 
 class PiPage(Page):
     def __init__(self):
