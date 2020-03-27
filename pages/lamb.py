@@ -13,7 +13,7 @@ class LambPage(Page):
 
     def generate_content(self):
         def width_of_word(word):
-            width = len(word)*5
+            width = len(word) * 5
             width -= sum(map(word.count, u"!:,‘’.'I’")) * 3
             width -= sum(map(word.count, u"-()1")) * 2
             width -= sum(map(word.count, u"T")) * 1
@@ -180,7 +180,7 @@ class LambPage(Page):
         left_margin = (config.WIDTH - book_width) // 2
 
         book = "x" * book_width + "\n"
-        book += ("x" + "-" * (book_width - 2) + "x" + "\n") * (book_height-2)
+        book += ("x" + "-" * (book_width - 2) + "x" + "\n") * (book_height - 2)
         book += "x" * book_width + "\n"
         book = book.replace(" ", "-").replace("x", "W")
         color = random.choice(['g', 'r', 'o', 'c', 'b', 'm', 'R', 'y', 'G',
