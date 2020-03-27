@@ -13,6 +13,9 @@ jobs:
       - run:
           command: pip3 install -r requirements.txt
           name: Install dependencies
+      - run:
+          command: pip3 install -r flake8
+          name: Install flake8
       - python/save-cache
       - run:
           command: python3 -m flake8 . --exclude=__init__.py --ignore=E722
