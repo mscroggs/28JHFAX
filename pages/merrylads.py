@@ -14,8 +14,8 @@ class MerryLadsPage(Page):
         # Pick randomly
         import random
         checklist = [
-        'broyden bean',
-        'oak and ash',
+        "broyden bean",
+        "oak and ash",
         "bonny lass",
         "bagpipe song",
         "month of May",
@@ -93,48 +93,51 @@ class MerryLadsPage(Page):
 
         self.add_title("Each with his...",font="size4",fg="GREEN",bg="BRIGHTWHITE")
 
-        lad=(
-'''------ooooo------
------ooooooo-----
------oxkxkxo-----
------oxxxxxo-----
------xxkxkxx-----
-------xxkxx------
-----ggxxxxxgg----
----ggggxxxgggg---
----ggggggggggg---
---ggggggggggggg--
---ggggggggggggg--
---ggggggggggggg--
--xx-ggggggggg-xx-
--xx-ggggggggg-xx-
--xx-ggggggggg-xx-
-xx--ggggggggg--xx
-xx--ggggggggg--xx
-xx--ggggggggg--xx
-----WWWWWWWWW----
-----yyyyyyyyy----
-----yyyy-yyyy----
-----yyyy-yyyy----
-----yyyy-yyyy----
-----yyyy-yyyy----
-----yyyy-yyyy----
------xx---xx-----
------xx---xx-----
------xx---xx-----
------xx---xx-----
------xx---xx-----
------xx---xx-----
-----xxx---xxx----''').replace(" ","-").replace("x","W")
+        lad = ("------ooooo------\n"
+               "-----ooooooo-----\n"
+               "-----oxkxkxo-----\n"
+               "-----oxxxxxo-----\n"
+               "-----xxkxkxx-----\n"
+               "------xxkxx------\n"
+               "----ggxxxxxgg----\n"
+               "---ggggxxxgggg---\n"
+               "---ggggggggggg---\n"
+               "--ggggggggggggg--\n"
+               "--ggggggggggggg--\n"
+               "--ggggggggggggg--\n"
+               "-xx-ggggggggg-xx-\n"
+               "-xx-ggggggggg-xx-\n"
+               "-xx-ggggggggg-xx-\n"
+               "xx--ggggggggg--xx\n"
+               "xx--ggggggggg--xx\n"
+               "xx--ggggggggg--xx\n"
+               "----WWWWWWWWW----\n"
+               "----yyyyyyyyy----\n"
+               "----yyyy-yyyy----\n"
+               "----yyyy-yyyy----\n"
+               "----yyyy-yyyy----\n"
+               "----yyyy-yyyy----\n"
+               "----yyyy-yyyy----\n"
+               "-----xx---xx-----\n"
+               "-----xx---xx-----\n"
+               "-----xx---xx-----\n"
+               "-----xx---xx-----\n"
+               "-----xx---xx-----\n"
+               "-----xx---xx-----\n"
+               "----xxx---xxx----").replace(" ", "-").replace("x", "W")
 
         for i in range(5):
-            color = random.choice(['g','r','o','c','b','m','R','y','G','C','B','p'])
-            self.print_image(lad.replace('g',color),5,17*i-2)
+            color = random.choice(['g', 'r', 'o', 'c', 'b', 'm', 'R',
+                                   'y', 'G', 'C', 'B', 'p'])
+            self.print_image(lad.replace('g', color), 5, 17 * i - 2)
 
         self.move_cursor(x=0,y=22)
-        self.add_title(on_his_list.upper() + "!",font="size4bold",fg="GREEN",bg="BRIGHTWHITE")
+        self.add_title(on_his_list.upper() + "!", font="size4bold", fg="GREEN",
+                       bg="BRIGHTWHITE")
+
+
 pages = []
 
 # Departures
 merry01 = MerryLadsPage("180")
-merry01.importance=4
+merry01.importance = 4
