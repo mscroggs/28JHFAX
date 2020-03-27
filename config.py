@@ -10,18 +10,19 @@ NAME = "28JHFAX"
 
 flight_api = "http://example.com/{}{}{}"
 
-title =("-------yyyyyyyyyyyyyyyyy---------yyyyyyyyyy--------yyyyyyyyyy---------\n"
-        "-------yyyyyyyyyyyyyyyyy---------yyyyyyyyyy--------yyyyyyyyyy---------\n"
-        "-------yy......y......yy-----------y..yy.yy----------y.....yy---------\n"
-        "-------yyyyyyy.y..yyy.yy-yyyyyyyyy-y..yy.yy-yyyyyyyy-y..yy.yy-yyyyyyyy\n"
-        "-------yy......y......yy-yyyyyyyyy-y.....yy-yyyyyyyy-y.....yy-yyyyyyyy\n"
-        "-------yy..yyyyy..yyy.yy-yyyyy..yy-y..yy.yy-y.....yy-y..yy.yy-y..y..yy\n"
-        "-------yy......y......yy-yyyyy..yy-y..yy.yy-y..yyyyy-y..yy.yy-y..y..yy\n"
-        "-------yyyyyyyyyyyyyyyyy-yyyyy..yy-yyyyyyyy-y....yyy-yyyyyyyy-yy...yyy\n"
-        "-------yyyyyyyyyyyyyyyyy-y..yy..yy-yyyyyyyy-y..yyyyy-yyyyyyyy-y..y..yy\n"
-        "-------------------------y......yy----------y..yyyyy----------y..y..yy\n"
-        "-----------------------yyyyyyyyyyy--------yyyyyyyyyy--------yyyyyyyyyy\n"
-        "-----------------------yyyyyyyyyyy--------yyyyyyyyyy--------yyyyyyyyyy").replace(".","b")
+title = ("-------yyyyyyyyyyyyyyyyy---------yyyyyyyyyy--------yyyyyyyyyy---------\n"
+         "-------yyyyyyyyyyyyyyyyy---------yyyyyyyyyy--------yyyyyyyyyy---------\n"
+         "-------yy......y......yy-----------y..yy.yy----------y.....yy---------\n"
+         "-------yyyyyyy.y..yyy.yy-yyyyyyyyy-y..yy.yy-yyyyyyyy-y..yy.yy-yyyyyyyy\n"
+         "-------yy......y......yy-yyyyyyyyy-y.....yy-yyyyyyyy-y.....yy-yyyyyyyy\n"
+         "-------yy..yyyyy..yyy.yy-yyyyy..yy-y..yy.yy-y.....yy-y..yy.yy-y..y..yy\n"
+         "-------yy......y......yy-yyyyy..yy-y..yy.yy-y..yyyyy-y..yy.yy-y..y..yy\n"
+         "-------yyyyyyyyyyyyyyyyy-yyyyy..yy-yyyyyyyy-y....yyy-yyyyyyyy-yy...yyy\n"
+         "-------yyyyyyyyyyyyyyyyy-y..yy..yy-yyyyyyyy-y..yyyyy-yyyyyyyy-y..y..yy\n"
+         "-------------------------y......yy----------y..yyyyy----------y..y..yy\n"
+         "-----------------------yyyyyyyyyyy--------yyyyyyyyyy--------yyyyyyyyyy\n"
+         "-----------------------yyyyyyyyyyy--------yyyyyyyyyy--------yyyyyyyyyy"
+         ).replace(".", "b")
 
 
 twitter_access_key = None

@@ -34,49 +34,30 @@ class TubePage(Page):
         colours_other_text = ["BLACK", "BLACK", "WHITE", "BLACK"]
 
         mapping = [
-                    # ('There is a GOOD SERVICE on the rest of the line.', ''),
-                    ('London Overground', 'LO'),
-                    ('London Buses', 'Buses'),
-                    ('London Underground', 'LU'),
-                    # ('GOOD SERVICE on the rest of the line.', ''),
-                    # ('There is a GOOD SERVICE on all other routes.', ''),
-                    # ('GOOD SERVICE on all other routes.', ''),
-                    # ('GOOD SERVICE on other London Overground routes.', ''),
-                    # ('GOOD SERVICE on other London Overground routes', ''),
-                    # ('The service will resume again at 0615 on Monday.', ''),
-                    # ('The service will resume again at 0615 tomorrow.', ''),
-                    # ('The service will resume again at 0615.', ''),
-                    # ('Train service will resume at 06:15 tomorrow.', ''),
-                    # ('No service between ', ''),
-                    # ('Minor delays ', ''),
-                    # (' due to planned engineering work.', '.'),
-                    # (' due to planned work.', '.'),
-                    # ('due to ', ''),
-                    ('King\'s Cross St. Pancras', 'KX'),
-                    ('Kings Cross St. Pancras', 'KX'),
-                    ('Tottenham Court Road', 'TCR'),
-                    ('Highbury & Islington', 'H&I'),
-                    ('Harrow & Wealdstone', 'H&W'),
-                    ('Kensington (Olympia)', 'Olympia'),
-                    ('Cross', 'X'),
-                    ('Road', 'Rd'),
-                    ('Square', 'Sq'),
-                    ('Street', 'St'),
-                    ('Junction', 'Jn'),
-                    ('Airport', 'Apt'),
-                    ('Town', 'Tn'),
-                    ('Park', 'Pk'),
-                    ('Lane', 'Ln'),
-                    ('Hill', 'Hl'),
-                    ('Central', 'Ctl'),
-                    ('North ', 'N '),
-                    ('South ', 'S '),
-                    ('East ', 'E '),
-                    ('West ', 'W '),
-                    # (' and ', '-'),
-                    # ('between ', ''),
-                    # (' to ', '-'),
-                    ]
+            ('London Overground', 'LO'),
+            ('London Buses', 'Buses'),
+            ('London Underground', 'LU'),
+            ('King\'s Cross St. Pancras', 'KX'),
+            ('Kings Cross St. Pancras', 'KX'),
+            ('Tottenham Court Road', 'TCR'),
+            ('Highbury & Islington', 'H&I'),
+            ('Harrow & Wealdstone', 'H&W'),
+            ('Kensington (Olympia)', 'Olympia'),
+            ('Cross', 'X'),
+            ('Road', 'Rd'),
+            ('Square', 'Sq'),
+            ('Street', 'St'),
+            ('Junction', 'Jn'),
+            ('Airport', 'Apt'),
+            ('Town', 'Tn'),
+            ('Park', 'Pk'),
+            ('Lane', 'Ln'),
+            ('Hill', 'Hl'),
+            ('Central', 'Ctl'),
+            ('North ', 'N '),
+            ('South ', 'S '),
+            ('East ', 'E '),
+            ('West ', 'W ')]
 
         good = []
         for line, fg, bg in zip(lines_tube + lines_other,
@@ -88,9 +69,9 @@ class TubePage(Page):
             else:
                 self.start_fg_color(fg)
                 self.start_bg_color(bg)
-                self.add_text(" " + str(line).replace("and", "&")
-                              + " " * (20 - len(str(line).replace("and",
-                                                                  "&"))))
+                self.add_text(" " + str(line).replace(
+                    "and", "&") + " " * (
+                        20 - len(str(line).replace("and", "&"))))
                 self.end_bg_color()
                 self.end_fg_color()
                 if desc == "Minor Delays":
@@ -123,8 +104,8 @@ class TubePage(Page):
             desc = self.current_status.get_status(line).description
             self.start_fg_color(fg)
             self.start_bg_color(bg)
-            self.add_text(" " + str(line).replace("and", "&")
-                          + " " * (20 - len(str(line).replace("and", "&"))))
+            self.add_text(" " + str(line).replace(
+                "and", "&") + " " * (20 - len(str(line).replace("and", "&"))))
             self.end_bg_color()
             self.start_fg_color("GREEN")
 
