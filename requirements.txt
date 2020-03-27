@@ -6,3 +6,4 @@ twitter
 tubestatus
 bs4
 lxml
+numpy
