@@ -1,6 +1,6 @@
 import pytest
 
-from ceefax.page import PageManager, Page
+from ceefax.page import PageManager
 from ceefax.cupt import DummyScreen
 from ceefax import config
 
