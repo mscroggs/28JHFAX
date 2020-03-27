@@ -190,8 +190,9 @@ class LambPage(Page):
         self.move_cursor(x=left_margin + 2,
                          y=top_margin + book_height // 2 - 9)
         self.add_title_wrapped(chosen_book.upper(), font="size4", fg="BLACK",
-                          bg="BRIGHTWHITE", pre=left_margin + 2, fill=False,
-                          max_width=book_width - 4, center=True)
+                               bg="BRIGHTWHITE", pre=left_margin + 2,
+                               fill=False, max_width=book_width - 4,
+                               center=True)
 
 
 lamb01 = LambPage("181")

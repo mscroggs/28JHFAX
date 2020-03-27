@@ -79,7 +79,7 @@ class ShowerGelPage(Page):
         book_width = 41
         book_height = 29
         top_margin = 11
-        left_margin = (config.WIDTH-book_width)//2
+        left_margin = (config.WIDTH - book_width) // 2
 
         book = "x" * book_width + "\n"
         book += ("x" + "-" * (book_width - 2) + "x" + "\n") * (book_height - 2)
