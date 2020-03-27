@@ -29,7 +29,7 @@ class VirusGraphPage(Page):
         self.add_title("COVID19 in " + self.shortname, font='size4bold')
         xlabels = [(i, datetime.datetime.strptime(
                    self.xs[i], '%Y-%m-%d').strftime('%-d-%b-%y'))
-                   for i in range(0, len(self.ys), len(self.ys) // 5)],
+                   for i in range(0, len(self.ys), len(self.ys) // 5)]
         self.plot(range(len(self.ys)), self.ys, 4, 0,
                   width=80, height=23, ytitle="Confirmed cases",
                   xlabels=xlabels, point=None, line="r")
