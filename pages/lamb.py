@@ -12,47 +12,6 @@ class LambPage(Page):
                         "of Jackson Lamb")
 
     def generate_content(self):
-        def width_of_word(word):
-            width = len(word) * 5
-            width -= sum(map(word.count, u"!:,‘’.'I’")) * 3
-            width -= sum(map(word.count, u"-()1")) * 2
-            width -= sum(map(word.count, u"T")) * 1
-            width += sum(map(word.count, u"MW")) * 1
-            width -= sum(map(word.count, u"il")) * 3
-            width -= sum(map(word.count, u"fjt")) * 2
-            width -= sum(map(word.count, u"abcdeghknopqrsuvxyz")) * 1
-            width += sum(map(word.count, u"mw")) * 1
-            return width
-
-        def center_pad(center, chars_left):
-            if center:
-                return ((chars_left + 2) // 2) * "|"
-            else:
-                return ""
-
-        def add_title_wrapped(text, max_width=config.WIDTH, bg="YELLOW",
-                              fg="BLACK", font="size4", fill=True, pre=0,
-                              center=False):
-            chars_left = max_width
-            line = ""
-            text = text.split(" ")
-            first_line = True
-            for word in text:
-                if chars_left - width_of_word(word) <= 0 and not first_line:
-                    # Print old line and start new line.
-                    self.add_title(center_pad(center, chars_left) + line[:-1],
-                                   bg=bg, fg=fg, font=font, fill=fill, pre=pre)
-                    chars_left = max_width
-                    line = word + " "
-                else:
-                    # Add word to line
-                    line = line + word + " "
-                    first_line = False
-                chars_left = chars_left - width_of_word(word) - 3
-            # Print final line.
-            self.add_title(center_pad(center, chars_left) + line[:-1],
-                           bg=bg, fg=fg, font=font, fill=fill, pre=pre)
-
         # Pick randomly
         import random
         titles = [
@@ -230,7 +189,7 @@ class LambPage(Page):
         self.add_text(author)
         self.move_cursor(x=left_margin + 2,
                          y=top_margin + book_height // 2 - 9)
-        add_title_wrapped(chosen_book.upper(), font="size4", fg="BLACK",
+        self.add_title_wrapped(chosen_book.upper(), font="size4", fg="BLACK",
                           bg="BRIGHTWHITE", pre=left_margin + 2, fill=False,
                           max_width=book_width - 4, center=True)
 
