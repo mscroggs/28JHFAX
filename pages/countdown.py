@@ -10,7 +10,6 @@ class CountdownPage(Page):
         self.who = who
         self.when = when
         if numb is not None:
-            self.in_index = True
             self.index_num = numb
 
     def generate_content(self):

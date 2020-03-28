@@ -7,7 +7,7 @@ class LambPage(Page):
     def __init__(self, page_num):
         super(LambPage, self).__init__(page_num)
         self.title = "Jackson Lamb novel"
-        self.in_index = True
+        self.index_num = page_num
         self.tagline = ("Another tale from the inimitable chronicles "
                         "of Jackson Lamb")
 

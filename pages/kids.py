@@ -56,7 +56,6 @@ class NewsroundPage(Page):
     def __init__(self):
         super(NewsroundPage, self).__init__("131")
         self.title = "Newsround"
-        self.in_index = False
 
     def background(self):
         import feedparser
@@ -86,7 +85,6 @@ class BluePeterPage(Page):
         super(BluePeterPage, self).__init__(str(131 + n))
         self.title = "Blue Peter"
         self.n = n
-        self.in_index = False
 
     def generate_content(self):
         # Content in these pages is taken from https://www.bbc.co.uk/cbbc
@@ -387,7 +385,6 @@ class DemonHeadmasterPage(Page):
     def __init__(self):
         super(DemonHeadmasterPage, self).__init__("141")
         self.title = "The Demon Headmaster"
-        self.in_index = False
 
     def generate_content(self):
         self.add_title("look into my eyes", font="size4", fg="BLACK",
@@ -404,7 +401,6 @@ class ChucklePage(Page):
     def __init__(self):
         super(ChucklePage, self).__init__("142")
         self.title = "ChuckleVision"
-        self.in_index = False
 
     def generate_content(self):
         self.add_title("C", fg="BLACK", bg="ORANGE", fill=False)
@@ -505,7 +501,6 @@ class PlaydaysPage(Page):
         super(PlaydaysPage, self).__init__("143")
         self.importance = 3
         self.title = "Playdays"
-        self.in_index = False
 
     def generate_content(self):
         self.add_title("P", fill=False, fg="BLACK", bg="RED")
@@ -729,7 +724,6 @@ class CrackerjackPage(Page):
     def __init__(self):
         super(CrackerjackPage, self).__init__("144")
         self.title = "Crackerjack"
-        self.in_index = False
 
     def generate_content(self):
         self.move_cursor(y=5)
@@ -741,7 +735,6 @@ class PaddingtonPage(Page):
     def __init__(self):
         super(PaddingtonPage, self).__init__("145")
         self.title = "Paddington Bear"
-        self.in_index = False
 
     def generate_content(self):
         self.add_title("Please look", fg="BLACK", bg="WHITE")
@@ -782,7 +775,6 @@ class WackyRacesPage(Page):
     def __init__(self):
         super(WackyRacesPage, self).__init__("146")
         self.title = "Wacky Races"
-        self.in_index = False
 
     def generate_content(self):
         self.add_title("Wacky Races")
@@ -830,7 +822,6 @@ class OtisPage(Page):
         super(OtisPage, self).__init__("147")
         self.title = "Otis's Joke Page"
         self.importance = 3
-        self.in_index = False
 
     def generate_content(self):
         self.add_title(" Otis's Joke page", fg="BLACK", bg="GREEN",

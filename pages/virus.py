@@ -13,7 +13,6 @@ class VirusGraphPage(Page):
             self.shortname = cname
         else:
             self.shortname = shortname
-        self.in_index = False
         self.tagline = "Uh oh"
         self.log = log
 
