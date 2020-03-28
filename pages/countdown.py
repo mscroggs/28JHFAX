@@ -30,7 +30,7 @@ class CountdownPage(Page):
             color = "RED"
         else:
             delta = config.now() - self.when
-            hs = delta.seconds//3600
+            hs = delta.seconds // 3600
             ds = delta.days
             if ds != 1:
                 days += "S"
