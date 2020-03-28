@@ -797,8 +797,7 @@ class WackyRacesPage(Page):
             ("The Ant Hill Mob", "The Bulletproof Bomb", " 7"),
             ("Lazy Luke", "The Arkansas Chugabug", " 8"),
             ("Peter Perfect", "The Turbo Terrific", " 9"),
-            ("Rufus Ruffcut", "The Buzz Wagon", "10")
-          ]
+            ("Rufus Ruffcut", "The Buzz Wagon", "10")]
         dast = ("Dick Dastardly and Mutley", "The Mean Machine", "00")
         shuffle(racers)
         winner = racers[0]
