@@ -38,7 +38,7 @@ class CrosswordPage(Page):
                     if i < len(solution) - 1 and \
                             (i == 0 or solution[i - 1][j] == " ") and \
                             solution[i + 1][j] != " ":
-                        numbers.append((2+7*j, 6+4*i, n))
+                        numbers.append((2 + 7 * j, 6 + 4 * i, n))
                         n += 1
                         done = True
                         d_n.append(n-1)
@@ -78,7 +78,7 @@ class CrosswordPage(Page):
         for n, clue in zip(d_n, dclues):
             self.add_newline()
             self.move_cursor(x=x)
-            self.add_text(str(n)+" ", fg="GREEN")
+            self.add_text(str(n) + " ", fg="GREEN")
             self.add_wrapped_text(clue, pre=x + 2)
         self.add_newline()
         self.add_newline()
@@ -271,7 +271,7 @@ class CountdownLettersPage(Page):
         v = randrange(3, 6)
         c = 9 - v
 
-        self.letters = vowels[:v]+conson[:c]
+        self.letters = vowels[:v] + conson[:c]
         shuffle(self.letters)
 
         self.possible = {i: [] for i in range(1, 10)}
@@ -354,7 +354,7 @@ class CountdownNumbersPage(Page):
                          " " + cleanstr(result) + ".\n")
             if o == "*":
                 result = a * b
-                desc += ("    MULTIPLY " + cleanstr(a)+" "
+                desc += ("    MULTIPLY " + cleanstr(a) + " "
                          "BY " + cleanstr(b) + " TO MAKE"
                          " " + cleanstr(result) + ".\n")
             if o == "/":
@@ -367,8 +367,8 @@ class CountdownNumbersPage(Page):
             if o == ";":
                 result = a
             comp_order = [j if j < i else j - 1 for j in comp_order[1:]]
-            numbers = numbers[:i] + [result] + numbers[i+2:]
-            operations = operations[:i] + operations[i+1:]
+            numbers = numbers[:i] + [result] + numbers[i + 2:]
+            operations = operations[:i] + operations[i + 1:]
 
         return numbers[0], desc
 
@@ -384,7 +384,7 @@ class CountdownNumbersPage(Page):
             self.move_cursor(x=0, y=14)
             self.add_title("|" + str(n) + "|", font="size4",
                            fg="BLUE", bg="BRIGHTWHITE", fill=False, pre=pre)
-            pre += width(n)+3
+            pre += width(n) + 3
 
         self.add_newline()
         self.add_text("Press + to reveal answer", fg="GREEN")
@@ -554,7 +554,7 @@ class IndexPage(Page):
             ("169", "Reverse Bases")
         ]:
             self.add_text(n, fg="GREEN")
-            self.add_text(" "+title)
+            self.add_text(" " + title)
             self.add_newline()
 
 
