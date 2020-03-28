@@ -41,7 +41,7 @@ class CrosswordPage(Page):
                         numbers.append((2 + 7 * j, 6 + 4 * i, n))
                         n += 1
                         done = True
-                        d_n.append(n-1)
+                        d_n.append(n - 1)
                     if j < len(solution[0]) - 1 and \
                             (j == 0 or solution[i][j - 1] == " ") and \
                             solution[i][j + 1] != " ":
@@ -68,7 +68,7 @@ class CrosswordPage(Page):
         for n, clue in zip(a_n, aclues):
             self.add_newline()
             self.move_cursor(x=x)
-            self.add_text(str(n)+" ", fg="GREEN")
+            self.add_text(str(n) + " ", fg="GREEN")
             self.add_wrapped_text(clue, pre=x)
 
         self.add_newline()
