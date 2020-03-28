@@ -5,7 +5,7 @@ from ceefax import config
 
 class ShowerGelPage(Page):
     def __init__(self, page_num):
-        super(ShowerGelPage, self).__init__(page_num)
+        super().__init__(page_num)
         self.title = "Shower gel"
         self.index_num = page_num
         self.tagline = "FREE Shower puff when you spend OVER £10"

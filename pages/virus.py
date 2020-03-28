@@ -5,7 +5,7 @@ from ceefax.helpers import url_handler
 
 class VirusGraphPage(Page):
     def __init__(self, page_num, cname, shortname=None, log=False):
-        super(VirusGraphPage, self).__init__(page_num)
+        super().__init__(page_num)
         self.importance = 4
         self.title = "COVID19 in " + cname
         self.cname = cname

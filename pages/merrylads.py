@@ -3,7 +3,7 @@ from ceefax.page import Page
 
 class MerryLadsPage(Page):
     def __init__(self, page_num):
-        super(MerryLadsPage, self).__init__(page_num)
+        super().__init__(page_num)
         self.title = "Merry lads' checklist"
         self.index_num = page_num
         self.tagline = ("Fa la la la la (la la la la la la la la) "

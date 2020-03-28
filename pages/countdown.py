@@ -5,7 +5,7 @@ from ceefax.helpers.time import datetime
 
 class CountdownPage(Page):
     def __init__(self, page_num, who, when, numb=None):
-        super(CountdownPage, self).__init__(page_num)
+        super().__init__(page_num)
         self.title = "Countdowns"
         self.who = who
         self.when = when

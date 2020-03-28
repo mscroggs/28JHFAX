@@ -7,7 +7,7 @@ from ceefax.helpers import file_handler
 
 class CBBCPage(Page):
     def __init__(self):
-        super(CBBCPage, self).__init__("130")
+        super().__init__("130")
         self.title = "CBBC"
         self.index_num = "130-148"
 
@@ -54,7 +54,7 @@ class CBBCPage(Page):
 
 class NewsroundPage(Page):
     def __init__(self):
-        super(NewsroundPage, self).__init__("131")
+        super().__init__("131")
         self.title = "Newsround"
 
     def background(self):
@@ -82,7 +82,7 @@ class NewsroundPage(Page):
 
 class BluePeterPage(Page):
     def __init__(self, n):
-        super(BluePeterPage, self).__init__(str(131 + n))
+        super().__init__(str(131 + n))
         self.title = "Blue Peter"
         self.n = n
 
@@ -383,7 +383,7 @@ class BluePeterPage(Page):
 
 class DemonHeadmasterPage(Page):
     def __init__(self):
-        super(DemonHeadmasterPage, self).__init__("141")
+        super().__init__("141")
         self.title = "The Demon Headmaster"
 
     def generate_content(self):
@@ -399,7 +399,7 @@ class DemonHeadmasterPage(Page):
 
 class ChucklePage(Page):
     def __init__(self):
-        super(ChucklePage, self).__init__("142")
+        super().__init__("142")
         self.title = "ChuckleVision"
 
     def generate_content(self):
@@ -498,7 +498,7 @@ class ChucklePage(Page):
 
 class PlaydaysPage(Page):
     def __init__(self):
-        super(PlaydaysPage, self).__init__("143")
+        super().__init__("143")
         self.importance = 3
         self.title = "Playdays"
 
@@ -722,7 +722,7 @@ class PlaydaysPage(Page):
 
 class CrackerjackPage(Page):
     def __init__(self):
-        super(CrackerjackPage, self).__init__("144")
+        super().__init__("144")
         self.title = "Crackerjack"
 
     def generate_content(self):
@@ -733,7 +733,7 @@ class CrackerjackPage(Page):
 
 class PaddingtonPage(Page):
     def __init__(self):
-        super(PaddingtonPage, self).__init__("145")
+        super().__init__("145")
         self.title = "Paddington Bear"
 
     def generate_content(self):
@@ -773,7 +773,7 @@ class PaddingtonPage(Page):
 
 class WackyRacesPage(Page):
     def __init__(self):
-        super(WackyRacesPage, self).__init__("146")
+        super().__init__("146")
         self.title = "Wacky Races"
 
     def generate_content(self):
@@ -819,7 +819,7 @@ class WackyRacesPage(Page):
 
 class OtisPage(Page):
     def __init__(self):
-        super(OtisPage, self).__init__("147")
+        super().__init__("147")
         self.title = "Otis's Joke Page"
         self.importance = 3
 
@@ -857,7 +857,7 @@ class OtisPage(Page):
 
 class TorchyPage(Page):
     def __init__(self):
-        super(TorchyPage, self).__init__("148")
+        super().__init__("148")
         self.title = "Torchy the Battery Boy"
         self.importance = 5
 
