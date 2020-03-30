@@ -127,6 +127,7 @@ class LambPage(Page):
             'Tyre Iron',
             'Lockdown Lamb',
             'Hustings Lamb',
+            'Lambd sanitiser',
             'Newborn Lamb']
         chosen_book = random.choice(titles)
 
