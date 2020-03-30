@@ -128,6 +128,9 @@ class LambPage(Page):
             'Lockdown Lamb',
             'Hustings Lamb',
             'Lambd sanitiser',
+            'Super Mario Cartwright',
+            'All\'s Lamb that ends Lamb',
+            'Laaaaaaaaaamb',
             'Newborn Lamb']
         chosen_book = random.choice(titles)
 
