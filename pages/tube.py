@@ -32,11 +32,14 @@ class TubePage(Page):
                           b['towards'], b['currentLocation']))
         tubes.sort()
 
-        num_platforms = len(platforms)
-        max_tubes_per_platform = 23 // num_platforms - 1
 
-        tubes_per_platform = [[] for i in range(len(platforms))]
-        lines_per_platform = [[] for i in range(len(platforms))]
+        if len(platforms) == 0:
+            max_tubes_per_platform = 22
+        else:
+            max_tubes_per_platform = 23 // len(platforms) - 1
+
+        tubes_per_platform = [[] for i in platforms]
+        lines_per_platform = [[] for i in platforms]
 
         for pnum, platform in enumerate(platforms):
             for tube in tubes:
