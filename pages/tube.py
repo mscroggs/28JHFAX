@@ -15,9 +15,9 @@ class TubePage(Page):
 
     def generate_content(self):
         tube_times = url_handler.load_json("http://api.tfl.gov.uk"
-                                           "/stopPoint/" +
-                                           self.code + "/arrivals?mode=tube")
-
+                                           "/stopPoint"
+                                           "/" + self.code + "/"
+                                           "arrivals?mode=tube")
         tubes = []
         platforms = []
         for b in tube_times:
@@ -46,9 +46,9 @@ class TubePage(Page):
                     if line not in lines_per_platform[pnum]:
                         lines_per_platform[pnum].append(line)
 
-        platform_order = sorted(range(len(platforms)),
-                                key=lambda k: lines_per_platform[k][0] +
-                                " " + platforms[k])
+        platform_order = sorted(
+            range(len(platforms)),
+            key=lambda k: lines_per_platform[k][0] + " " + platforms[k])
 
         self.add_title(self.station, font='size4', fg="BRIGHTWHITE", bg="BLUE")
 
