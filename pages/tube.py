@@ -32,7 +32,6 @@ class TubePage(Page):
                           b['towards'], b['currentLocation']))
         tubes.sort()
 
-
         if len(platforms) == 0:
             max_tubes_per_platform = 22
         else:
