@@ -156,7 +156,8 @@ class LambPage(Page):
             'The Return of David Lamberon',
             'Even More David Lamberon',
             'I\'ve Had Enough of David Lamberon',
-            'What\'s for Dinner? Not Lamb.']
+            'What\'s for Dinner? Not Lamb.',
+            'M Night Shamalamb']
         chosen_book = random.choice(titles)
 
         self.add_title("Book of the week", font="size4",
